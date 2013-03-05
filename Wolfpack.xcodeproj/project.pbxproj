@@ -1,0 +1,798 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D03DFADC16E4588B0044826E /* justin.png in Resources */ = {isa = PBXBuildFile; fileRef = D03DFADA16E4588B0044826E /* justin.png */; };
+		D03DFADD16E4588B0044826E /* justin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D03DFADB16E4588B0044826E /* justin@2x.png */; };
+		D03DFB1416E5B1270044826E /* RAW_2448.filter in Resources */ = {isa = PBXBuildFile; fileRef = D03DFB1216E5B1270044826E /* RAW_2448.filter */; };
+		D03DFB1516E5B1270044826E /* RAW_1936.filter in Resources */ = {isa = PBXBuildFile; fileRef = D03DFB1316E5B1270044826E /* RAW_1936.filter */; };
+		D042BC9D1658A49B00E46282 /* CIColor+WPAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D042BC9B1658A49B00E46282 /* CIColor+WPAdditions.h */; settings = {ATTRIBUTES = (); }; };
+		D042BC9E1658A49B00E46282 /* CIColor+WPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D042BC9C1658A49B00E46282 /* CIColor+WPAdditions.m */; };
+		D042BC9F1658A71900E46282 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A3F1811657078C000CB66E /* libz.dylib */; };
+		D042BCA01658A71B00E46282 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A3F17F16570780000CB66E /* libc++.dylib */; };
+		D042BCA11658A73100E46282 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A3F0EA1656CA7C000CB66E /* CoreGraphics.framework */; };
+		D042BCA41658AB3600E46282 /* WPCurveProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = D042BCA21658AB3600E46282 /* WPCurveProcess.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D042BCA51658AB3600E46282 /* WPCurveProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = D042BCA31658AB3600E46282 /* WPCurveProcess.m */; };
+		D042BCAF1658AB6900E46282 /* CACVObject.h in Headers */ = {isa = PBXBuildFile; fileRef = D042BCA71658AB6900E46282 /* CACVObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D042BCB01658AB6900E46282 /* CACVObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D042BCA81658AB6900E46282 /* CACVObject.m */; };
+		D042BCB11658AB6900E46282 /* CColorCurve.h in Headers */ = {isa = PBXBuildFile; fileRef = D042BCA91658AB6900E46282 /* CColorCurve.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D042BCB21658AB6900E46282 /* CColorCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = D042BCAA1658AB6900E46282 /* CColorCurve.m */; };
+		D042BCB31658AB6900E46282 /* CDataScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = D042BCAB1658AB6900E46282 /* CDataScanner.h */; };
+		D042BCB41658AB6900E46282 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = D042BCAC1658AB6900E46282 /* CDataScanner.m */; };
+		D042BCB51658AB6900E46282 /* curve.h in Headers */ = {isa = PBXBuildFile; fileRef = D042BCAD1658AB6900E46282 /* curve.h */; };
+		D042BCB61658AB6900E46282 /* curve.mm in Sources */ = {isa = PBXBuildFile; fileRef = D042BCAE1658AB6900E46282 /* curve.mm */; };
+		D042BCD51658B01F00E46282 /* WPBlurProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = D042BCD31658B01E00E46282 /* WPBlurProcess.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D042BCD61658B01F00E46282 /* WPBlurProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = D042BCD41658B01F00E46282 /* WPBlurProcess.m */; };
+		D042BCE11658B09000E46282 /* WPImageOverlayProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = D042BCDF1658B08F00E46282 /* WPImageOverlayProcess.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D042BCE21658B09000E46282 /* WPImageOverlayProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = D042BCE01658B08F00E46282 /* WPImageOverlayProcess.m */; };
+		D042BCE51658B09F00E46282 /* WPScriptProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = D042BCE31658B09E00E46282 /* WPScriptProcess.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D042BCE61658B09F00E46282 /* WPScriptProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = D042BCE41658B09E00E46282 /* WPScriptProcess.m */; };
+		D042BCE91658B0E500E46282 /* CIImage+WPAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D042BCE71658B0E400E46282 /* CIImage+WPAdditions.h */; };
+		D042BCEA1658B0E500E46282 /* CIImage+WPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D042BCE81658B0E400E46282 /* CIImage+WPAdditions.m */; };
+		D042BCF71658B2AD00E46282 /* WPLinearGradientProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = D042BCF31658B2AC00E46282 /* WPLinearGradientProcess.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D042BCF81658B2AD00E46282 /* WPLinearGradientProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = D042BCF41658B2AC00E46282 /* WPLinearGradientProcess.m */; };
+		D042BCF91658B2AD00E46282 /* WPRadialGradientProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = D042BCF51658B2AC00E46282 /* WPRadialGradientProcess.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D042BCFA1658B2AD00E46282 /* WPRadialGradientProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = D042BCF61658B2AD00E46282 /* WPRadialGradientProcess.m */; };
+		D042BCFD1658B31A00E46282 /* WPConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = D042BCFB1658B31900E46282 /* WPConstants.h */; settings = {ATTRIBUTES = (); }; };
+		D042BCFE1658B31A00E46282 /* WPConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = D042BCFC1658B31900E46282 /* WPConstants.m */; };
+		D042BD1B16593A7800E46282 /* libzipzap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D042BD1616593A6400E46282 /* libzipzap.a */; };
+		D0A271AC165C6C82005F4D8C /* WPUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = D0A271AA165C6C80005F4D8C /* WPUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0A271AD165C6C82005F4D8C /* WPUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A271AB165C6C81005F4D8C /* WPUtilities.m */; };
+		D0A271C4165D30B4005F4D8C /* SGDeviceIdentifier.h in Headers */ = {isa = PBXBuildFile; fileRef = D0A271C2165D30B2005F4D8C /* SGDeviceIdentifier.h */; };
+		D0A271C5165D30B4005F4D8C /* SGDeviceIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A271C3165D30B3005F4D8C /* SGDeviceIdentifier.m */; };
+		D0A3F0D41656C785000CB66E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A3F0D31656C785000CB66E /* Foundation.framework */; };
+		D0A3F0E81656CA7C000CB66E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A3F0E71656CA7C000CB66E /* UIKit.framework */; };
+		D0A3F0E91656CA7C000CB66E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A3F0D31656C785000CB66E /* Foundation.framework */; };
+		D0A3F0F11656CA7C000CB66E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0A3F0EF1656CA7C000CB66E /* InfoPlist.strings */; };
+		D0A3F0F31656CA7C000CB66E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A3F0F21656CA7C000CB66E /* main.m */; };
+		D0A3F1001656CA7C000CB66E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0A3F0FE1656CA7C000CB66E /* MainStoryboard.storyboard */; };
+		D0A3F13F1656D672000CB66E /* Sample1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0A3F1381656D672000CB66E /* Sample1.jpg */; };
+		D0A3F1401656D672000CB66E /* Sample2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0A3F1391656D672000CB66E /* Sample2.jpg */; };
+		D0A3F1411656D672000CB66E /* Sample3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0A3F13A1656D672000CB66E /* Sample3.jpg */; };
+		D0A3F1421656D672000CB66E /* Sample4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0A3F13B1656D672000CB66E /* Sample4.jpg */; };
+		D0A3F1431656D672000CB66E /* Sample5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0A3F13C1656D672000CB66E /* Sample5.jpg */; };
+		D0A3F1481656D689000CB66E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A3F1451656D689000CB66E /* Default-568h@2x.png */; };
+		D0A3F1491656D689000CB66E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A3F1461656D689000CB66E /* Default.png */; };
+		D0A3F14A1656D689000CB66E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A3F1471656D689000CB66E /* Default@2x.png */; };
+		D0A3F1531656D6A3000CB66E /* DRAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A3F14C1656D6A3000CB66E /* DRAboutViewController.m */; };
+		D0A3F1541656D6A3000CB66E /* DRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A3F14E1656D6A3000CB66E /* DRAppDelegate.m */; };
+		D0A3F1551656D6A3000CB66E /* DRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A3F1501656D6A3000CB66E /* DRDetailViewController.m */; };
+		D0A3F1561656D6A3000CB66E /* DRMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A3F1521656D6A3000CB66E /* DRMasterViewController.m */; };
+		D0A3F15D1657028C000CB66E /* WPFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A3F15C1657028C000CB66E /* WPFilter.m */; };
+		D0A3F1601657035F000CB66E /* libWolfpack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A3F0D01656C785000CB66E /* libWolfpack.a */; };
+		D0A3F16216570398000CB66E /* Wolfpack.h in Headers */ = {isa = PBXBuildFile; fileRef = D0A3F0D81656C785000CB66E /* Wolfpack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0A3F16316570398000CB66E /* WPFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = D0A3F15B1657028C000CB66E /* WPFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0A3F17B16570683000CB66E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A3F0E71656CA7C000CB66E /* UIKit.framework */; };
+		D0A3F17C16570699000CB66E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A3F0EA1656CA7C000CB66E /* CoreGraphics.framework */; };
+		D0A3F17E16570763000CB66E /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A3F17D16570763000CB66E /* ImageIO.framework */; };
+		D0A3F18016570780000CB66E /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A3F17F16570780000CB66E /* libc++.dylib */; };
+		D0A3F1821657078C000CB66E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A3F1811657078C000CB66E /* libz.dylib */; };
+		D0A3F18916573B6B000CB66E /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A3F18816573B6B000CB66E /* CoreImage.framework */; };
+		D0A3F18A16573B74000CB66E /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A3F18816573B6B000CB66E /* CoreImage.framework */; };
+		D0A3F18D16574BBF000CB66E /* WPProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = D0A3F18B16574BBF000CB66E /* WPProcess.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0A3F18E16574BBF000CB66E /* WPProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A3F18C16574BBF000CB66E /* WPProcess.m */; };
+		D0A3F19116580596000CB66E /* WPColorProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = D0A3F18F16580596000CB66E /* WPColorProcess.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0A3F19216580596000CB66E /* WPColorProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A3F19016580596000CB66E /* WPColorProcess.m */; };
+		D0A8CDDA16699E07001BF249 /* Noir_1536.filter in Resources */ = {isa = PBXBuildFile; fileRef = D0A8CDD716699E07001BF249 /* Noir_1536.filter */; };
+		D0A8CDDB16699E07001BF249 /* Noir_1936.filter in Resources */ = {isa = PBXBuildFile; fileRef = D0A8CDD816699E07001BF249 /* Noir_1936.filter */; };
+		D0A8CDDC16699E07001BF249 /* Noir_2448.filter in Resources */ = {isa = PBXBuildFile; fileRef = D0A8CDD916699E07001BF249 /* Noir_2448.filter */; };
+		D0BB109C1665D26500C5D0BC /* WPCoreImageProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BB109A1665D26500C5D0BC /* WPCoreImageProcess.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0BB109D1665D26500C5D0BC /* WPCoreImageProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB109B1665D26500C5D0BC /* WPCoreImageProcess.m */; };
+		D0BB109F1665D4C800C5D0BC /* RAW_1536.filter in Resources */ = {isa = PBXBuildFile; fileRef = D0BB109E1665D4C800C5D0BC /* RAW_1536.filter */; };
+		D0E5B5D6165E911C0044F95E /* WPAdjustmentsProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = D0E5B5D4165E911B0044F95E /* WPAdjustmentsProcess.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0E5B5D7165E911C0044F95E /* WPAdjustmentsProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E5B5D5165E911B0044F95E /* WPAdjustmentsProcess.m */; };
+		D0E5B5E1165E991B0044F95E /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E5B5E0165E991B0044F95E /* Accelerate.framework */; };
+		D0E5B5E2165E9A7D0044F95E /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E5B5E0165E991B0044F95E /* Accelerate.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D042BD1316593A6400E46282 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D042BD0A16593A6400E46282 /* zipzap.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D899CF82162C5EC100112F49;
+			remoteInfo = "zipzap (OS X)";
+		};
+		D042BD1516593A6400E46282 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D042BD0A16593A6400E46282 /* zipzap.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D899CFB0162C5EEB00112F49;
+			remoteInfo = "zipzap (iOS)";
+		};
+		D042BD1716593A6400E46282 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D042BD0A16593A6400E46282 /* zipzap.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D899CF96162C5EC100112F49;
+			remoteInfo = zipzapTests;
+		};
+		D042BD1916593A6D00E46282 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D042BD0A16593A6400E46282 /* zipzap.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D899CFAF162C5EEB00112F49;
+			remoteInfo = "zipzap (iOS)";
+		};
+		D0A3F15E1657035B000CB66E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0A3F0C71656C785000CB66E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0A3F0CF1656C785000CB66E;
+			remoteInfo = Wolfpack;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D03DFADA16E4588B0044826E /* justin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = justin.png; sourceTree = "<group>"; };
+		D03DFADB16E4588B0044826E /* justin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "justin@2x.png"; sourceTree = "<group>"; };
+		D03DFB1216E5B1270044826E /* RAW_2448.filter */ = {isa = PBXFileReference; lastKnownFileType = file; name = RAW_2448.filter; path = Filters/RAW_2448.filter; sourceTree = "<group>"; };
+		D03DFB1316E5B1270044826E /* RAW_1936.filter */ = {isa = PBXFileReference; lastKnownFileType = file; name = RAW_1936.filter; path = Filters/RAW_1936.filter; sourceTree = "<group>"; };
+		D042BC9B1658A49B00E46282 /* CIColor+WPAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CIColor+WPAdditions.h"; sourceTree = "<group>"; };
+		D042BC9C1658A49B00E46282 /* CIColor+WPAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CIColor+WPAdditions.m"; sourceTree = "<group>"; };
+		D042BCA21658AB3600E46282 /* WPCurveProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPCurveProcess.h; sourceTree = "<group>"; };
+		D042BCA31658AB3600E46282 /* WPCurveProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPCurveProcess.m; sourceTree = "<group>"; };
+		D042BCA71658AB6900E46282 /* CACVObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CACVObject.h; sourceTree = "<group>"; };
+		D042BCA81658AB6900E46282 /* CACVObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CACVObject.m; sourceTree = "<group>"; };
+		D042BCA91658AB6900E46282 /* CColorCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CColorCurve.h; sourceTree = "<group>"; };
+		D042BCAA1658AB6900E46282 /* CColorCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CColorCurve.m; sourceTree = "<group>"; };
+		D042BCAB1658AB6900E46282 /* CDataScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner.h; sourceTree = "<group>"; };
+		D042BCAC1658AB6900E46282 /* CDataScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner.m; sourceTree = "<group>"; };
+		D042BCAD1658AB6900E46282 /* curve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curve.h; sourceTree = "<group>"; };
+		D042BCAE1658AB6900E46282 /* curve.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = curve.mm; sourceTree = "<group>"; };
+		D042BCD31658B01E00E46282 /* WPBlurProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPBlurProcess.h; sourceTree = "<group>"; };
+		D042BCD41658B01F00E46282 /* WPBlurProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPBlurProcess.m; sourceTree = "<group>"; };
+		D042BCDF1658B08F00E46282 /* WPImageOverlayProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPImageOverlayProcess.h; sourceTree = "<group>"; };
+		D042BCE01658B08F00E46282 /* WPImageOverlayProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPImageOverlayProcess.m; sourceTree = "<group>"; };
+		D042BCE31658B09E00E46282 /* WPScriptProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPScriptProcess.h; sourceTree = "<group>"; };
+		D042BCE41658B09E00E46282 /* WPScriptProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPScriptProcess.m; sourceTree = "<group>"; };
+		D042BCE71658B0E400E46282 /* CIImage+WPAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CIImage+WPAdditions.h"; sourceTree = "<group>"; };
+		D042BCE81658B0E400E46282 /* CIImage+WPAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CIImage+WPAdditions.m"; sourceTree = "<group>"; };
+		D042BCF31658B2AC00E46282 /* WPLinearGradientProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPLinearGradientProcess.h; sourceTree = "<group>"; };
+		D042BCF41658B2AC00E46282 /* WPLinearGradientProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPLinearGradientProcess.m; sourceTree = "<group>"; };
+		D042BCF51658B2AC00E46282 /* WPRadialGradientProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPRadialGradientProcess.h; sourceTree = "<group>"; };
+		D042BCF61658B2AD00E46282 /* WPRadialGradientProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPRadialGradientProcess.m; sourceTree = "<group>"; };
+		D042BCFB1658B31900E46282 /* WPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPConstants.h; sourceTree = "<group>"; };
+		D042BCFC1658B31900E46282 /* WPConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPConstants.m; sourceTree = "<group>"; };
+		D042BD0A16593A6400E46282 /* zipzap.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = zipzap.xcodeproj; path = External/zipzap/zipzap.xcodeproj; sourceTree = "<group>"; };
+		D0A271AA165C6C80005F4D8C /* WPUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPUtilities.h; sourceTree = "<group>"; };
+		D0A271AB165C6C81005F4D8C /* WPUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPUtilities.m; sourceTree = "<group>"; };
+		D0A271C2165D30B2005F4D8C /* SGDeviceIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGDeviceIdentifier.h; sourceTree = "<group>"; };
+		D0A271C3165D30B3005F4D8C /* SGDeviceIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGDeviceIdentifier.m; sourceTree = "<group>"; };
+		D0A3F0D01656C785000CB66E /* libWolfpack.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWolfpack.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0A3F0D31656C785000CB66E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D0A3F0D71656C785000CB66E /* Wolfpack-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wolfpack-Prefix.pch"; sourceTree = "<group>"; };
+		D0A3F0D81656C785000CB66E /* Wolfpack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Wolfpack.h; sourceTree = "<group>"; };
+		D0A3F0E51656CA7C000CB66E /* WolfpackSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WolfpackSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0A3F0E71656CA7C000CB66E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D0A3F0EA1656CA7C000CB66E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D0A3F0EE1656CA7C000CB66E /* WolfpackSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WolfpackSample-Info.plist"; sourceTree = "<group>"; };
+		D0A3F0F01656CA7C000CB66E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D0A3F0F21656CA7C000CB66E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D0A3F0F41656CA7C000CB66E /* WolfpackSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WolfpackSample-Prefix.pch"; sourceTree = "<group>"; };
+		D0A3F0FF1656CA7C000CB66E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		D0A3F1381656D672000CB66E /* Sample1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sample1.jpg; sourceTree = "<group>"; };
+		D0A3F1391656D672000CB66E /* Sample2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sample2.jpg; sourceTree = "<group>"; };
+		D0A3F13A1656D672000CB66E /* Sample3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sample3.jpg; sourceTree = "<group>"; };
+		D0A3F13B1656D672000CB66E /* Sample4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sample4.jpg; sourceTree = "<group>"; };
+		D0A3F13C1656D672000CB66E /* Sample5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sample5.jpg; sourceTree = "<group>"; };
+		D0A3F1451656D689000CB66E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D0A3F1461656D689000CB66E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D0A3F1471656D689000CB66E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D0A3F14B1656D6A3000CB66E /* DRAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DRAboutViewController.h; path = Classes/DRAboutViewController.h; sourceTree = "<group>"; };
+		D0A3F14C1656D6A3000CB66E /* DRAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRAboutViewController.m; path = Classes/DRAboutViewController.m; sourceTree = "<group>"; };
+		D0A3F14D1656D6A3000CB66E /* DRAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DRAppDelegate.h; path = Classes/DRAppDelegate.h; sourceTree = "<group>"; };
+		D0A3F14E1656D6A3000CB66E /* DRAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRAppDelegate.m; path = Classes/DRAppDelegate.m; sourceTree = "<group>"; };
+		D0A3F14F1656D6A3000CB66E /* DRDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DRDetailViewController.h; path = Classes/DRDetailViewController.h; sourceTree = "<group>"; };
+		D0A3F1501656D6A3000CB66E /* DRDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRDetailViewController.m; path = Classes/DRDetailViewController.m; sourceTree = "<group>"; };
+		D0A3F1511656D6A3000CB66E /* DRMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DRMasterViewController.h; path = Classes/DRMasterViewController.h; sourceTree = "<group>"; };
+		D0A3F1521656D6A3000CB66E /* DRMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRMasterViewController.m; path = Classes/DRMasterViewController.m; sourceTree = "<group>"; };
+		D0A3F15B1657028C000CB66E /* WPFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPFilter.h; sourceTree = "<group>"; };
+		D0A3F15C1657028C000CB66E /* WPFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPFilter.m; sourceTree = "<group>"; };
+		D0A3F17D16570763000CB66E /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		D0A3F17F16570780000CB66E /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		D0A3F1811657078C000CB66E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		D0A3F18816573B6B000CB66E /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		D0A3F18B16574BBF000CB66E /* WPProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPProcess.h; sourceTree = "<group>"; };
+		D0A3F18C16574BBF000CB66E /* WPProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPProcess.m; sourceTree = "<group>"; };
+		D0A3F18F16580596000CB66E /* WPColorProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPColorProcess.h; sourceTree = "<group>"; };
+		D0A3F19016580596000CB66E /* WPColorProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPColorProcess.m; sourceTree = "<group>"; };
+		D0A8CDD716699E07001BF249 /* Noir_1536.filter */ = {isa = PBXFileReference; lastKnownFileType = file; name = Noir_1536.filter; path = Filters/Noir_1536.filter; sourceTree = "<group>"; };
+		D0A8CDD816699E07001BF249 /* Noir_1936.filter */ = {isa = PBXFileReference; lastKnownFileType = file; name = Noir_1936.filter; path = Filters/Noir_1936.filter; sourceTree = "<group>"; };
+		D0A8CDD916699E07001BF249 /* Noir_2448.filter */ = {isa = PBXFileReference; lastKnownFileType = file; name = Noir_2448.filter; path = Filters/Noir_2448.filter; sourceTree = "<group>"; };
+		D0BB109A1665D26500C5D0BC /* WPCoreImageProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPCoreImageProcess.h; sourceTree = "<group>"; };
+		D0BB109B1665D26500C5D0BC /* WPCoreImageProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPCoreImageProcess.m; sourceTree = "<group>"; };
+		D0BB109E1665D4C800C5D0BC /* RAW_1536.filter */ = {isa = PBXFileReference; lastKnownFileType = file; name = RAW_1536.filter; path = Filters/RAW_1536.filter; sourceTree = "<group>"; };
+		D0E5B5D4165E911B0044F95E /* WPAdjustmentsProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPAdjustmentsProcess.h; sourceTree = "<group>"; };
+		D0E5B5D5165E911B0044F95E /* WPAdjustmentsProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPAdjustmentsProcess.m; sourceTree = "<group>"; };
+		D0E5B5E0165E991B0044F95E /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0A3F0CD1656C785000CB66E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0E5B5E1165E991B0044F95E /* Accelerate.framework in Frameworks */,
+				D042BD1B16593A7800E46282 /* libzipzap.a in Frameworks */,
+				D0A3F18916573B6B000CB66E /* CoreImage.framework in Frameworks */,
+				D0A3F1821657078C000CB66E /* libz.dylib in Frameworks */,
+				D0A3F18016570780000CB66E /* libc++.dylib in Frameworks */,
+				D0A3F17E16570763000CB66E /* ImageIO.framework in Frameworks */,
+				D0A3F17C16570699000CB66E /* CoreGraphics.framework in Frameworks */,
+				D0A3F17B16570683000CB66E /* UIKit.framework in Frameworks */,
+				D0A3F0D41656C785000CB66E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0A3F0E21656CA7C000CB66E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0A3F1601657035F000CB66E /* libWolfpack.a in Frameworks */,
+				D042BC9F1658A71900E46282 /* libz.dylib in Frameworks */,
+				D042BCA01658A71B00E46282 /* libc++.dylib in Frameworks */,
+				D0A3F18A16573B74000CB66E /* CoreImage.framework in Frameworks */,
+				D042BCA11658A73100E46282 /* CoreGraphics.framework in Frameworks */,
+				D0A3F0E81656CA7C000CB66E /* UIKit.framework in Frameworks */,
+				D0E5B5E2165E9A7D0044F95E /* Accelerate.framework in Frameworks */,
+				D0A3F0E91656CA7C000CB66E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D042BCA61658AB6900E46282 /* ACVObject */ = {
+			isa = PBXGroup;
+			children = (
+				D042BCA71658AB6900E46282 /* CACVObject.h */,
+				D042BCA81658AB6900E46282 /* CACVObject.m */,
+				D042BCA91658AB6900E46282 /* CColorCurve.h */,
+				D042BCAA1658AB6900E46282 /* CColorCurve.m */,
+				D042BCAB1658AB6900E46282 /* CDataScanner.h */,
+				D042BCAC1658AB6900E46282 /* CDataScanner.m */,
+				D042BCAD1658AB6900E46282 /* curve.h */,
+				D042BCAE1658AB6900E46282 /* curve.mm */,
+			);
+			name = ACVObject;
+			path = External/ACVObject/Source;
+			sourceTree = SOURCE_ROOT;
+		};
+		D042BD0B16593A6400E46282 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D042BD1416593A6400E46282 /* libzipzap.a */,
+				D042BD1616593A6400E46282 /* libzipzap.a */,
+				D042BD1816593A6400E46282 /* zipzapTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0A3F0C51656C785000CB66E = {
+			isa = PBXGroup;
+			children = (
+				D0A3F0D51656C785000CB66E /* Wolfpack */,
+				D0A3F0EC1656CA7C000CB66E /* WolfpackSample */,
+				D0A3F0D21656C785000CB66E /* Frameworks */,
+				D0A3F0D11656C785000CB66E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0A3F0D11656C785000CB66E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0A3F0D01656C785000CB66E /* libWolfpack.a */,
+				D0A3F0E51656CA7C000CB66E /* WolfpackSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0A3F0D21656C785000CB66E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0E5B5E0165E991B0044F95E /* Accelerate.framework */,
+				D042BD0A16593A6400E46282 /* zipzap.xcodeproj */,
+				D0A3F18816573B6B000CB66E /* CoreImage.framework */,
+				D0A3F1811657078C000CB66E /* libz.dylib */,
+				D0A3F17F16570780000CB66E /* libc++.dylib */,
+				D0A3F17D16570763000CB66E /* ImageIO.framework */,
+				D0A3F0D31656C785000CB66E /* Foundation.framework */,
+				D0A3F0E71656CA7C000CB66E /* UIKit.framework */,
+				D0A3F0EA1656CA7C000CB66E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0A3F0D51656C785000CB66E /* Wolfpack */ = {
+			isa = PBXGroup;
+			children = (
+				D0A3F0D81656C785000CB66E /* Wolfpack.h */,
+				D042BCFB1658B31900E46282 /* WPConstants.h */,
+				D042BCFC1658B31900E46282 /* WPConstants.m */,
+				D0A271AA165C6C80005F4D8C /* WPUtilities.h */,
+				D0A271AB165C6C81005F4D8C /* WPUtilities.m */,
+				D0A3F15B1657028C000CB66E /* WPFilter.h */,
+				D0A3F15C1657028C000CB66E /* WPFilter.m */,
+				D0A3F18B16574BBF000CB66E /* WPProcess.h */,
+				D0A3F18C16574BBF000CB66E /* WPProcess.m */,
+				D042BCD31658B01E00E46282 /* WPBlurProcess.h */,
+				D042BCD41658B01F00E46282 /* WPBlurProcess.m */,
+				D0A3F18F16580596000CB66E /* WPColorProcess.h */,
+				D0A3F19016580596000CB66E /* WPColorProcess.m */,
+				D0BB109A1665D26500C5D0BC /* WPCoreImageProcess.h */,
+				D0BB109B1665D26500C5D0BC /* WPCoreImageProcess.m */,
+				D0E5B5D4165E911B0044F95E /* WPAdjustmentsProcess.h */,
+				D0E5B5D5165E911B0044F95E /* WPAdjustmentsProcess.m */,
+				D042BCA21658AB3600E46282 /* WPCurveProcess.h */,
+				D042BCA31658AB3600E46282 /* WPCurveProcess.m */,
+				D042BCDF1658B08F00E46282 /* WPImageOverlayProcess.h */,
+				D042BCE01658B08F00E46282 /* WPImageOverlayProcess.m */,
+				D042BCF31658B2AC00E46282 /* WPLinearGradientProcess.h */,
+				D042BCF41658B2AC00E46282 /* WPLinearGradientProcess.m */,
+				D042BCF51658B2AC00E46282 /* WPRadialGradientProcess.h */,
+				D042BCF61658B2AD00E46282 /* WPRadialGradientProcess.m */,
+				D042BCE31658B09E00E46282 /* WPScriptProcess.h */,
+				D042BCE41658B09E00E46282 /* WPScriptProcess.m */,
+				D0A3F0D61656C785000CB66E /* Supporting Files */,
+			);
+			path = Wolfpack;
+			sourceTree = "<group>";
+		};
+		D0A3F0D61656C785000CB66E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D042BCA61658AB6900E46282 /* ACVObject */,
+				D0A3F0D71656C785000CB66E /* Wolfpack-Prefix.pch */,
+				D042BCE71658B0E400E46282 /* CIImage+WPAdditions.h */,
+				D042BCE81658B0E400E46282 /* CIImage+WPAdditions.m */,
+				D042BC9B1658A49B00E46282 /* CIColor+WPAdditions.h */,
+				D042BC9C1658A49B00E46282 /* CIColor+WPAdditions.m */,
+				D0A271C2165D30B2005F4D8C /* SGDeviceIdentifier.h */,
+				D0A271C3165D30B3005F4D8C /* SGDeviceIdentifier.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0A3F0EC1656CA7C000CB66E /* WolfpackSample */ = {
+			isa = PBXGroup;
+			children = (
+				D0BB109E1665D4C800C5D0BC /* RAW_1536.filter */,
+				D03DFB1316E5B1270044826E /* RAW_1936.filter */,
+				D03DFB1216E5B1270044826E /* RAW_2448.filter */,
+				D0A8CDD716699E07001BF249 /* Noir_1536.filter */,
+				D0A8CDD816699E07001BF249 /* Noir_1936.filter */,
+				D0A8CDD916699E07001BF249 /* Noir_2448.filter */,
+				D0A3F14D1656D6A3000CB66E /* DRAppDelegate.h */,
+				D0A3F14E1656D6A3000CB66E /* DRAppDelegate.m */,
+				D0A3F0FE1656CA7C000CB66E /* MainStoryboard.storyboard */,
+				D0A3F1511656D6A3000CB66E /* DRMasterViewController.h */,
+				D0A3F1521656D6A3000CB66E /* DRMasterViewController.m */,
+				D0A3F14F1656D6A3000CB66E /* DRDetailViewController.h */,
+				D0A3F1501656D6A3000CB66E /* DRDetailViewController.m */,
+				D0A3F14B1656D6A3000CB66E /* DRAboutViewController.h */,
+				D0A3F14C1656D6A3000CB66E /* DRAboutViewController.m */,
+				D0A3F0ED1656CA7C000CB66E /* Supporting Files */,
+			);
+			path = WolfpackSample;
+			sourceTree = "<group>";
+		};
+		D0A3F0ED1656CA7C000CB66E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0A3F1441656D689000CB66E /* Splash Screens */,
+				D0A3F1341656D671000CB66E /* Images */,
+				D0A3F1371656D671000CB66E /* Samples */,
+				D0A3F0EE1656CA7C000CB66E /* WolfpackSample-Info.plist */,
+				D0A3F0EF1656CA7C000CB66E /* InfoPlist.strings */,
+				D0A3F0F21656CA7C000CB66E /* main.m */,
+				D0A3F0F41656CA7C000CB66E /* WolfpackSample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0A3F1341656D671000CB66E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D03DFADA16E4588B0044826E /* justin.png */,
+				D03DFADB16E4588B0044826E /* justin@2x.png */,
+			);
+			name = Images;
+			path = Resources/Images;
+			sourceTree = "<group>";
+		};
+		D0A3F1371656D671000CB66E /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				D0A3F1381656D672000CB66E /* Sample1.jpg */,
+				D0A3F1391656D672000CB66E /* Sample2.jpg */,
+				D0A3F13A1656D672000CB66E /* Sample3.jpg */,
+				D0A3F13B1656D672000CB66E /* Sample4.jpg */,
+				D0A3F13C1656D672000CB66E /* Sample5.jpg */,
+			);
+			name = Samples;
+			path = Resources/Samples;
+			sourceTree = "<group>";
+		};
+		D0A3F1441656D689000CB66E /* Splash Screens */ = {
+			isa = PBXGroup;
+			children = (
+				D0A3F1451656D689000CB66E /* Default-568h@2x.png */,
+				D0A3F1461656D689000CB66E /* Default.png */,
+				D0A3F1471656D689000CB66E /* Default@2x.png */,
+			);
+			name = "Splash Screens";
+			path = "Resources/Splash Screens";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D0A3F16116570391000CB66E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0A3F16216570398000CB66E /* Wolfpack.h in Headers */,
+				D0A3F16316570398000CB66E /* WPFilter.h in Headers */,
+				D0A3F18D16574BBF000CB66E /* WPProcess.h in Headers */,
+				D0A3F19116580596000CB66E /* WPColorProcess.h in Headers */,
+				D042BCA41658AB3600E46282 /* WPCurveProcess.h in Headers */,
+				D042BCAF1658AB6900E46282 /* CACVObject.h in Headers */,
+				D042BCB11658AB6900E46282 /* CColorCurve.h in Headers */,
+				D042BCD51658B01F00E46282 /* WPBlurProcess.h in Headers */,
+				D042BCE11658B09000E46282 /* WPImageOverlayProcess.h in Headers */,
+				D042BCE51658B09F00E46282 /* WPScriptProcess.h in Headers */,
+				D042BCF71658B2AD00E46282 /* WPLinearGradientProcess.h in Headers */,
+				D042BCF91658B2AD00E46282 /* WPRadialGradientProcess.h in Headers */,
+				D0E5B5D6165E911C0044F95E /* WPAdjustmentsProcess.h in Headers */,
+				D0BB109C1665D26500C5D0BC /* WPCoreImageProcess.h in Headers */,
+				D0A271AC165C6C82005F4D8C /* WPUtilities.h in Headers */,
+				D042BCFD1658B31A00E46282 /* WPConstants.h in Headers */,
+				D042BC9D1658A49B00E46282 /* CIColor+WPAdditions.h in Headers */,
+				D042BCB31658AB6900E46282 /* CDataScanner.h in Headers */,
+				D042BCB51658AB6900E46282 /* curve.h in Headers */,
+				D042BCE91658B0E500E46282 /* CIImage+WPAdditions.h in Headers */,
+				D0A271C4165D30B4005F4D8C /* SGDeviceIdentifier.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D0A3F0CF1656C785000CB66E /* Wolfpack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0A3F0DE1656C785000CB66E /* Build configuration list for PBXNativeTarget "Wolfpack" */;
+			buildPhases = (
+				D0A3F0CC1656C785000CB66E /* Sources */,
+				D0A3F0CD1656C785000CB66E /* Frameworks */,
+				D0A3F16116570391000CB66E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D042BD1A16593A6D00E46282 /* PBXTargetDependency */,
+			);
+			name = Wolfpack;
+			productName = Wolfpack;
+			productReference = D0A3F0D01656C785000CB66E /* libWolfpack.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D0A3F0E41656CA7C000CB66E /* WolfpackSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0A3F1071656CA7C000CB66E /* Build configuration list for PBXNativeTarget "WolfpackSample" */;
+			buildPhases = (
+				D0A3F0E11656CA7C000CB66E /* Sources */,
+				D0A3F0E21656CA7C000CB66E /* Frameworks */,
+				D0A3F0E31656CA7C000CB66E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0A3F15F1657035B000CB66E /* PBXTargetDependency */,
+			);
+			name = WolfpackSample;
+			productName = WolfpackSample;
+			productReference = D0A3F0E51656CA7C000CB66E /* WolfpackSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0A3F0C71656C785000CB66E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Second Gear";
+			};
+			buildConfigurationList = D0A3F0CA1656C785000CB66E /* Build configuration list for PBXProject "Wolfpack" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D0A3F0C51656C785000CB66E;
+			productRefGroup = D0A3F0D11656C785000CB66E /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D042BD0B16593A6400E46282 /* Products */;
+					ProjectRef = D042BD0A16593A6400E46282 /* zipzap.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				D0A3F0CF1656C785000CB66E /* Wolfpack */,
+				D0A3F0E41656CA7C000CB66E /* WolfpackSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D042BD1416593A6400E46282 /* libzipzap.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libzipzap.a;
+			remoteRef = D042BD1316593A6400E46282 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D042BD1616593A6400E46282 /* libzipzap.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libzipzap.a;
+			remoteRef = D042BD1516593A6400E46282 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D042BD1816593A6400E46282 /* zipzapTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = zipzapTests.octest;
+			remoteRef = D042BD1716593A6400E46282 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0A3F0E31656CA7C000CB66E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0A3F0F11656CA7C000CB66E /* InfoPlist.strings in Resources */,
+				D0A3F1001656CA7C000CB66E /* MainStoryboard.storyboard in Resources */,
+				D0A3F13F1656D672000CB66E /* Sample1.jpg in Resources */,
+				D0A3F1401656D672000CB66E /* Sample2.jpg in Resources */,
+				D0A3F1411656D672000CB66E /* Sample3.jpg in Resources */,
+				D0A3F1421656D672000CB66E /* Sample4.jpg in Resources */,
+				D0A3F1431656D672000CB66E /* Sample5.jpg in Resources */,
+				D0A3F1481656D689000CB66E /* Default-568h@2x.png in Resources */,
+				D0A3F1491656D689000CB66E /* Default.png in Resources */,
+				D0A3F14A1656D689000CB66E /* Default@2x.png in Resources */,
+				D0BB109F1665D4C800C5D0BC /* RAW_1536.filter in Resources */,
+				D0A8CDDA16699E07001BF249 /* Noir_1536.filter in Resources */,
+				D0A8CDDB16699E07001BF249 /* Noir_1936.filter in Resources */,
+				D0A8CDDC16699E07001BF249 /* Noir_2448.filter in Resources */,
+				D03DFADC16E4588B0044826E /* justin.png in Resources */,
+				D03DFADD16E4588B0044826E /* justin@2x.png in Resources */,
+				D03DFB1416E5B1270044826E /* RAW_2448.filter in Resources */,
+				D03DFB1516E5B1270044826E /* RAW_1936.filter in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0A3F0CC1656C785000CB66E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0A3F15D1657028C000CB66E /* WPFilter.m in Sources */,
+				D0A3F18E16574BBF000CB66E /* WPProcess.m in Sources */,
+				D0A3F19216580596000CB66E /* WPColorProcess.m in Sources */,
+				D042BC9E1658A49B00E46282 /* CIColor+WPAdditions.m in Sources */,
+				D042BCA51658AB3600E46282 /* WPCurveProcess.m in Sources */,
+				D042BCB01658AB6900E46282 /* CACVObject.m in Sources */,
+				D042BCB21658AB6900E46282 /* CColorCurve.m in Sources */,
+				D042BCB41658AB6900E46282 /* CDataScanner.m in Sources */,
+				D042BCB61658AB6900E46282 /* curve.mm in Sources */,
+				D042BCD61658B01F00E46282 /* WPBlurProcess.m in Sources */,
+				D042BCE21658B09000E46282 /* WPImageOverlayProcess.m in Sources */,
+				D042BCE61658B09F00E46282 /* WPScriptProcess.m in Sources */,
+				D042BCEA1658B0E500E46282 /* CIImage+WPAdditions.m in Sources */,
+				D042BCF81658B2AD00E46282 /* WPLinearGradientProcess.m in Sources */,
+				D042BCFA1658B2AD00E46282 /* WPRadialGradientProcess.m in Sources */,
+				D042BCFE1658B31A00E46282 /* WPConstants.m in Sources */,
+				D0A271AD165C6C82005F4D8C /* WPUtilities.m in Sources */,
+				D0A271C5165D30B4005F4D8C /* SGDeviceIdentifier.m in Sources */,
+				D0E5B5D7165E911C0044F95E /* WPAdjustmentsProcess.m in Sources */,
+				D0BB109D1665D26500C5D0BC /* WPCoreImageProcess.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0A3F0E11656CA7C000CB66E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0A3F0F31656CA7C000CB66E /* main.m in Sources */,
+				D0A3F1531656D6A3000CB66E /* DRAboutViewController.m in Sources */,
+				D0A3F1541656D6A3000CB66E /* DRAppDelegate.m in Sources */,
+				D0A3F1551656D6A3000CB66E /* DRDetailViewController.m in Sources */,
+				D0A3F1561656D6A3000CB66E /* DRMasterViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D042BD1A16593A6D00E46282 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "zipzap (iOS)";
+			targetProxy = D042BD1916593A6D00E46282 /* PBXContainerItemProxy */;
+		};
+		D0A3F15F1657035B000CB66E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0A3F0CF1656C785000CB66E /* Wolfpack */;
+			targetProxy = D0A3F15E1657035B000CB66E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D0A3F0EF1656CA7C000CB66E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0A3F0F01656CA7C000CB66E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D0A3F0FE1656CA7C000CB66E /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0A3F0FF1656CA7C000CB66E /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0A3F0DC1656C785000CB66E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D0A3F0DD1656C785000CB66E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0A3F0DF1656C785000CB66E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Wolfpack.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wolfpack/Wolfpack-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = Wolfpack;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D0A3F0E01656C785000CB66E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Wolfpack.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wolfpack/Wolfpack-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = Wolfpack;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D0A3F1081656CA7C000CB66E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WolfpackSample/WolfpackSample-Prefix.pch";
+				INFOPLIST_FILE = "WolfpackSample/WolfpackSample-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = WolfpackSample;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D0A3F1091656CA7C000CB66E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WolfpackSample/WolfpackSample-Prefix.pch";
+				INFOPLIST_FILE = "WolfpackSample/WolfpackSample-Info.plist";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = WolfpackSample;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0A3F0CA1656C785000CB66E /* Build configuration list for PBXProject "Wolfpack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0A3F0DC1656C785000CB66E /* Debug */,
+				D0A3F0DD1656C785000CB66E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0A3F0DE1656C785000CB66E /* Build configuration list for PBXNativeTarget "Wolfpack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0A3F0DF1656C785000CB66E /* Debug */,
+				D0A3F0E01656C785000CB66E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0A3F1071656CA7C000CB66E /* Build configuration list for PBXNativeTarget "WolfpackSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0A3F1081656CA7C000CB66E /* Debug */,
+				D0A3F1091656CA7C000CB66E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0A3F0C71656C785000CB66E /* Project object */;
+}

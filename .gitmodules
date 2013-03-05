@@ -1,0 +1,6 @@
+[submodule "External/ACVObject"]
+	path = External/ACVObject
+	url = git@github.com:secondgear/ACVObject.git
+[submodule "External/zipzap"]
+	path = External/zipzap
+	url = git@github.com:secondgear/zipzap.git

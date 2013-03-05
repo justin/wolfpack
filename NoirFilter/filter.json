@@ -1,0 +1,49 @@
+{
+	"formatVersion" : 1,
+	"filterIdentifier" : "filter.com.secondgear.Noir",
+	"filterName" : "Noir",
+	"filterDescription" : "FILTER_DESCRIPTION",
+		"requirements" : [
+		"iOS > 6.0"
+	],
+	"organizationName" : "Justin Williams",
+	"organizationURL" : "http://carpeaqua.com", 
+	"sampleImages" : [
+		"Sample1.jpg",
+		"Sample2.jpg",
+		"Sample3.jpg"
+	],
+	"processing" : [
+		{
+			"actionType" : "image",
+			"blendMode" : "soft_light",
+			"alpha" : 0.3
+		},
+		{
+			"actionType" : "image",
+			"alpha" : 1.0,
+			"imageName" : "border_mask",
+			"blendMode" : "lighten"
+		},
+		{
+			"actionType" : "image",
+			"alpha" : 1.0,
+			"imageName" : "border",
+			"blendMode" : "darken"
+		},
+		{
+			"actionType" : "image",
+			"alpha" : 1.0,
+			"imageName" : "noise",
+			"blendMode" : "darken"
+		},
+		{
+			"actionType" : "CoreImage",
+			"CIFilter" : "CIColorMonochrome",
+			"parameters" : {
+				"inputColor" : "rgb(229,229,229)",
+				"inputIntensity" : 1.0
+			}
+		}
+	]
+}

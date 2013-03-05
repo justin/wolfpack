@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C3006" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="11">
+            <objects>
+                <navigationController id="3" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="4">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="12" kind="relationship" relationship="rootViewController" id="19"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="64"/>
+        </scene>
+        <!--Master View Controller - Dark Room-->
+        <scene sceneID="18">
+            <objects>
+                <tableViewController storyboardIdentifier="DRMasterViewController" title="Dark Room" useStoryboardIdentifierAsRestorationIdentifier="YES" id="12" customClass="DRMasterViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="13">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection headerTitle="Filters" id="ZNP-ig-SsP">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="Gif-J6-gRk" style="IBUITableViewCellStyleDefault" id="Qrs-Li-rGg">
+                                        <rect key="frame" x="0.0" y="46" width="320" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="280" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="RAW (Minor tweak)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gif-J6-gRk">
+                                                    <rect key="frame" x="10" y="0.0" width="260" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="21" kind="push" identifier="RAWSegue" id="iMX-60-8Ao"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="phq-AM-6qj" style="IBUITableViewCellStyleDefault" id="lJ0-d7-vTF">
+                                        <rect key="frame" x="0.0" y="91" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="0.0" width="280" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Noir (B&amp;W)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="phq-AM-6qj">
+                                                    <rect key="frame" x="10" y="0.0" width="260" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="21" kind="push" identifier="GothamSegue" id="jZb-fq-zAk"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="About" id="yKa-ST-ysq">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="oi6-gd-dbx" style="IBUITableViewCellStyleDefault" id="KyV-4e-W5w">
+                                        <rect key="frame" x="0.0" y="181" width="320" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="280" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="About Wolfpack" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oi6-gd-dbx">
+                                                    <rect key="frame" x="10" y="0.0" width="260" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="gHc-ey-ib3" kind="push" identifier="AboutSegue" id="mSX-l6-x8c"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="12" id="16"/>
+                            <outlet property="delegate" destination="12" id="15"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Dark Room" id="36"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="17" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="459" y="64"/>
+        </scene>
+        <!--About View Controller - Wolfpack-->
+        <scene sceneID="Xyt-7o-82e">
+            <objects>
+                <viewController storyboardIdentifier="DRAboutViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gHc-ey-ib3" customClass="DRAboutViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FWW-cX-zBd">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Wolfpack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z46-fn-Cg1">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="An image filtering library by Justin Williams" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qzv-Df-hpq">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="UGs-WK-FBv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Build: %i" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtX-zd-eex">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KgL-nc-TKI">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Wolfpack on GitHub">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openGitHub:" destination="gHc-ey-ib3" eventType="touchUpInside" id="Nde-cJ-0WU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umW-uI-cZs">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Contact Justin">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openSupport:" destination="gHc-ey-ib3" eventType="touchUpInside" id="pe6-KD-wj4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpx-JR-EDz">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="174" id="r4k-mC-4Tk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Follow @justin">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="followOnTwitter:" destination="gHc-ey-ib3" eventType="touchUpInside" id="Ehe-RD-ur8"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="justin.png" translatesAutoresizingMaskIntoConstraints="NO" id="vhV-0g-17C"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cpx-JR-EDz" firstAttribute="leading" secondItem="KgL-nc-TKI" secondAttribute="leading" type="default" id="0Ej-sY-vPs"/>
+                            <constraint firstItem="z46-fn-Cg1" firstAttribute="top" secondItem="FWW-cX-zBd" secondAttribute="top" constant="40" id="0md-BB-Q1Z"/>
+                            <constraint firstAttribute="trailing" secondItem="wtX-zd-eex" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="1l3-pO-vTl"/>
+                            <constraint firstItem="KgL-nc-TKI" firstAttribute="width" secondItem="umW-uI-cZs" secondAttribute="width" type="user" id="Aqj-SD-xTK"/>
+                            <constraint firstItem="umW-uI-cZs" firstAttribute="top" secondItem="KgL-nc-TKI" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Dpe-ZF-dgU"/>
+                            <constraint firstAttribute="trailing" secondItem="z46-fn-Cg1" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="GfU-fr-rxs"/>
+                            <constraint firstItem="Qzv-Df-hpq" firstAttribute="leading" secondItem="FWW-cX-zBd" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Pex-7q-zCR"/>
+                            <constraint firstAttribute="bottom" secondItem="wtX-zd-eex" secondAttribute="bottom" constant="21" id="RpJ-C2-18B"/>
+                            <constraint firstItem="wtX-zd-eex" firstAttribute="top" secondItem="umW-uI-cZs" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="TDP-rz-qPu"/>
+                            <constraint firstItem="cpx-JR-EDz" firstAttribute="top" secondItem="vhV-0g-17C" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="XXn-2n-YJ4"/>
+                            <constraint firstAttribute="trailing" secondItem="Qzv-Df-hpq" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="d55-HF-M5b"/>
+                            <constraint firstItem="umW-uI-cZs" firstAttribute="centerX" secondItem="wtX-zd-eex" secondAttribute="centerX" type="default" id="duP-7y-jPc"/>
+                            <constraint firstItem="z46-fn-Cg1" firstAttribute="leading" secondItem="FWW-cX-zBd" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="eFZ-7F-NWu"/>
+                            <constraint firstItem="umW-uI-cZs" firstAttribute="leading" secondItem="KgL-nc-TKI" secondAttribute="leading" type="default" id="gaX-je-HUc"/>
+                            <constraint firstItem="cpx-JR-EDz" firstAttribute="width" secondItem="KgL-nc-TKI" secondAttribute="width" type="user" id="ig3-bc-XVU"/>
+                            <constraint firstItem="Qzv-Df-hpq" firstAttribute="top" secondItem="z46-fn-Cg1" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="jf0-E2-lqW"/>
+                            <constraint firstItem="vhV-0g-17C" firstAttribute="leading" secondItem="FWW-cX-zBd" secondAttribute="leading" constant="90" id="mHc-0g-Jl7"/>
+                            <constraint firstItem="wtX-zd-eex" firstAttribute="leading" secondItem="FWW-cX-zBd" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="vCP-bt-gmC"/>
+                            <constraint firstItem="KgL-nc-TKI" firstAttribute="width" secondItem="cpx-JR-EDz" secondAttribute="width" type="user" id="xVE-9i-vgZ"/>
+                            <constraint firstItem="vhV-0g-17C" firstAttribute="top" secondItem="FWW-cX-zBd" secondAttribute="top" constant="130" id="ykh-oR-JzG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Wolfpack" id="ya1-60-qnD"/>
+                    <connections>
+                        <outlet property="buildNumberLabel" destination="wtX-zd-eex" id="SKC-Wb-qlm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dac-Jf-oor" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902" y="724"/>
+        </scene>
+        <!--Detail View Controller - Detail-->
+        <scene sceneID="24">
+            <objects>
+                <viewController storyboardIdentifier="DRDetailViewController" title="Detail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="21" customClass="DRDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="22">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="smf-pf-eL4"/>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="smf-pf-eL4" firstAttribute="top" secondItem="22" secondAttribute="top" type="default" id="2hE-oP-1mB"/>
+                            <constraint firstItem="smf-pf-eL4" firstAttribute="trailing" secondItem="22" secondAttribute="trailing" type="default" id="C7i-Kv-Yfs"/>
+                            <constraint firstItem="smf-pf-eL4" firstAttribute="bottom" secondItem="22" secondAttribute="bottom" type="default" id="dVN-FM-y1P"/>
+                            <constraint firstItem="smf-pf-eL4" firstAttribute="leading" secondItem="22" secondAttribute="leading" type="default" id="hjs-cC-d9u"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Processed" id="26"/>
+                    <connections>
+                        <outlet property="imageView" destination="smf-pf-eL4" id="YjX-FI-Uzm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="23" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902" y="64"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="justin.png" width="128" height="128"/>
+    </resources>
+    <classes>
+        <class className="DRAboutViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DRAboutViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="buildNumberLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="DRDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DRDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="DRMasterViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DRMasterViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="iMX-60-8Ao"/>
+    </inferredMetricsTieBreakers>
+</document>
