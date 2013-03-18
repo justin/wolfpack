@@ -6,6 +6,7 @@ This is a total work in progress.
 
 ## Installation
 
+- Run `git submodule update --init --recursive` in the project directory to build.
 - Add -ObjC to target's Other Linker Flags
 - Target Dependency is libWolfpack
 - Link against libWolfpack, libz, libc++, CoreImage, CoreGraphics, Accelerate
