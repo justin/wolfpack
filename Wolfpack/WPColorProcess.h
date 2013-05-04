@@ -22,6 +22,26 @@
 
 #import <Wolfpack/Wolfpack.h>
 
+//
+// Sample JSON
+//
+//
+//  "processing" : [
+//      {
+//          "actionType" : "color",
+//          "blendMode" : "darken",
+//          "alpha" : 1.0,
+//          "rgb" : "rgb(229,229,229)"
+//      }
+//  ]
+
+
+// Supported Keys
+//
+// "actionType" - Should be "color"
+// "blendMode" - Should be one of the supported blend modes listed in WPConstants
+// "alpha" - The alpha value between 0.0 and 1.0
+// "rgb" - The color to apply. RGB values are only supported in rgb() format.
 @interface WPColorProcess : WPProcess
 
 @end

@@ -22,12 +22,18 @@
 
 #import "WPConstants.h"
 
+// +--------------------------------------------------------------------
+// | .filter JSON Keys
+// +--------------------------------------------------------------------
 NSString * const kWPProcessBlendModeKey = @"blendMode";
 NSString * const kWPProcessAlphaKey = @"alpha";
 NSString * const kWPProcessImageNameKey = @"imageName";
 NSString * const kWPProcessCurveFileKey = @"curveFile";
 NSString * const kWPProcessRGBKey = @"rgb";
 
+// +--------------------------------------------------------------------
+// | .filter JSON Blend Modes
+// +--------------------------------------------------------------------
 NSString * const kWPProcessBlendModeTypeColor = @"color";
 NSString * const kWPProcessBlendModeTypeColorBurn = @"color_burn";
 NSString * const kWPProcessBlendModeTypeDodge = @"dodge";

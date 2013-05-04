@@ -22,6 +22,26 @@
 
 #import <Wolfpack/Wolfpack.h>
 
+//
+// Sample JSON
+//
+//
+//  "processing" : [
+//      {
+//          "actionType" : "adjustment",
+//          "brightness" : 0.6
+//          "contrast" : 0.5
+//          "saturation" : 1.0
+//      }
+//  ]
+
+
+// Supported Keys
+//
+// "actionType" - Should be "adjustment"
+// "brightness" - An integer value between 0.0 and 1.0 to adjust the image brightness.
+// "contrast" - An integer value between 0.0 and 1.0 to adjust the image contrast.
+// "saturation" - An integer value between 0.0 and 1.0 to adjust the image saturation.
 @interface WPAdjustmentsProcess : WPProcess
 
 @end

@@ -22,6 +22,26 @@
 
 #import <Wolfpack/Wolfpack.h>
 
+//
+// Sample JSON
+//
+//
+//  "processing" : [
+//      {
+//          "actionType" : "image",
+//          "alpha" : 1.0,
+//          "blendMode" : "darken",
+//          "imageName" : "border",
+//      }
+//  ]
+
+
+// Supported Keys
+//
+// "actionType" - Should be "image"
+// "alpha" - The alpha value between 0.0 and 1.0
+// "blendMode" - Should be one of the supported blend modes listed in WPConstants
+// "imageName" - The name of the image. No extension required.
 @interface WPImageOverlayProcess : WPProcess
 
 @property (nonatomic, strong) CIImage *image;

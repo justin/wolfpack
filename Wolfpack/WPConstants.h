@@ -20,13 +20,18 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-
+// +--------------------------------------------------------------------
+// | .filter JSON Keys
+// +--------------------------------------------------------------------
 extern NSString * const kWPProcessBlendModeKey;
 extern NSString * const kWPProcessAlphaKey;
 extern NSString * const kWPProcessImageNameKey;
 extern NSString * const kWPProcessCurveFileKey;
 extern NSString * const kWPProcessRGBKey;
 
+// +--------------------------------------------------------------------
+// | .filter JSON Blend Modes
+// +--------------------------------------------------------------------
 extern NSString * const kWPProcessBlendModeTypeColor;
 extern NSString * const kWPProcessBlendModeTypeColorBurn;
 extern NSString * const kWPProcessBlendModeTypeDodge;

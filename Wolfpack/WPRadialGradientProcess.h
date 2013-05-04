@@ -22,6 +22,33 @@
 
 #import <Wolfpack/Wolfpack.h>
 
+//
+// Sample JSON
+//
+//
+//  "processing" : [
+//      {
+//          "actionType" : "gradient",
+//          "alpha" : 1.0,
+//          "blendMode" : "darken",
+//          "gradientType" : "radial",
+//          "colors" : [
+//              "rgb(0, 0, 0)",
+//              "rgb(225, 255, 255)"
+//			],
+//          "radii" : [0.2, 0.8]
+//      }
+//  ]
+
+
+// Supported Keys
+//
+// "actionType" - Should be "gradient"
+// "alpha" - The alpha value between 0.0 and 1.0
+// "blendMode" - Should be one of the supported blend modes listed in WPConstants
+// "gradientType" - "linear" or "radial"
+// "colors" - The equivalent of inputColor0 and inputColor1. RGB values are only supported in rgb() format. Should only be two values. All others will be ignored.
+// "radii" - The equivalent of inputRadius0 and inputRadius1. Should only be two values. All others will be ignored.
 @interface WPRadialGradientProcess : WPProcess
 
 @end

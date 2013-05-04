@@ -21,5 +21,22 @@
 // THE SOFTWARE.
 #import <Foundation/Foundation.h>
 
+// Creates a string with the resolution-specific name for an image asset.
+// The resolution is based on the device type. For instance an iPhone 5 would
+// return ImageName_2448.
+//
+// imageName - The name of the image you want to fetch from the filter.
+//
+//
+// Returns the image name with the resolution appended (Image_2448).
 extern NSString * DRDeviceSpecificImageName(NSString *imageName);
+
+// Converts a Wolfpack key for a blend mode into one that is compatible with
+// Core Image.
+//
+//
+// blendMode -  The Wolfpack key for the specific blend mode. If it's an unsupported
+//              blend mode it will return nil.
+//
+// Returns the name of the Core Image filter for a specific blend mode.
 extern NSString * DRCIFilterNameForBlendMode(NSString *blendMode);

@@ -22,6 +22,22 @@
 
 #import <Wolfpack/Wolfpack.h>
 
+//
+// Sample JSON
+//
+//
+//  "processing" : [
+//      {
+//          "actionType" : "script",
+//          "scriptName" : "filename"
+//      }
+//  ]
+
+
+// Supported Keys
+//
+// "actionType" - Should be "script"
+// "scriptName" - The script name. File extension is optional. File must be Lua.
 @interface WPScriptProcess : WPProcess
 
 // Coming Soon

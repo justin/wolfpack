@@ -22,6 +22,27 @@
 
 #import <Wolfpack/Wolfpack.h>
 
+//
+// Sample JSON
+//
+//
+//  "processing" : [
+//      {
+//          "actionType" : "CoreImage",
+//          "CIFilter" : @"CIColorMonochrome",
+//          "parameters" : {
+//              "inputColor" : "rgb(229,229,229)",
+//              "inputIntensity" : 1.0
+//			},
+//      }
+//  ]
+
+
+// Supported Keys
+//
+// "actionType" - Should be "CoreImage"
+// "CIFilter" - The Core Image filter name. http://developer.apple.com/documentation/graphicsimaging/reference/CoreImageFilterReference/index.html
+// "parameters" - A dictionary of input values. These are unique for each filter. See the Core Image reference for the specific values for the filter you want to use.
 @interface WPCoreImageProcess : WPProcess
 
 @end

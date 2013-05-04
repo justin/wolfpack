@@ -22,6 +22,28 @@
 
 #import <Wolfpack/Wolfpack.h>
 
+//
+// Sample JSON
+//
+//
+//  "processing" : [
+//      {
+//          "actionType" : "blur",
+//          "blendMode" : "darken",
+//          "alpha" : 1.0,
+//          "blurType" : "gaussian",
+//          "blurRadius" : 0.008
+//      }
+//  ]
+
+
+// Supported Keys
+//
+// "actionType" - Should be "blur"
+// "blendMode" - Should be one of the supported blend modes listed in WPConstants
+// "alpha" - The alpha value between 0.0 and 1.0
+// "blurType" - The type of blur. Currently only gaussian is supported. "radial" coming someday.
+// "blurRadius" - The radius of the blur. Equivalent to inputRadius in CIGaussianBlur.
 @interface WPBlurProcess : WPProcess
 
 @end

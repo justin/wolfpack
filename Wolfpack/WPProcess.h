@@ -26,8 +26,9 @@
 //  - WPBlurProcess
 //  - WPColorProcess
 //  - WPCurveProcess
-//  - DRGradientProcess
 //  - WPImageOverlayProcess
+//  - WPLinearGradientProcess
+//  - WPRadialGradientProcess
 //  - WPScriptProcess
 
 #import <Foundation/Foundation.h>

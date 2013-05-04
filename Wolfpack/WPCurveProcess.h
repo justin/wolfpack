@@ -22,6 +22,22 @@
 
 #import <Wolfpack/Wolfpack.h>
 
+//
+// Sample JSON
+//
+//
+//  "processing" : [
+//      {
+//          "actionType" : "curve",
+//          "curveName" : "fileName",
+//      }
+//  ]
+
+
+// Supported Keys
+//
+// "actionType" - Should be "curve"
+// "curveName" - The name of the curve file. Should be an ACV file. Extension not required.
 @interface WPCurveProcess : WPProcess
 
 // Coming Soon
