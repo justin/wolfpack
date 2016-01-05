@@ -1,3 +1,7 @@
+# Deprecated
+
+This project is no longer under active development. Use at your own peril.
+
 # Wolfpack 0.0.1
 
 Wolfpack is an image processing library for iOS and OS X. With the vast improvements to Core Image brought on by iOS 6, working with images on the iPhone and iPad has never been easier. 
